@@ -1,7 +1,7 @@
-squid
+squid-gem-proxy
 =====
 
-Run squid as a caching proxy in a docker container:
+Run squid as a reverse proxy to http://rubygems.org in a docker container:
 
     docker pull mumoshu/squid-gem-proxy
 
