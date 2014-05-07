@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd $(dirname $0)
-docker build -t poklet/squid .
+docker build -t mumoshu/squid-gem-proxy .

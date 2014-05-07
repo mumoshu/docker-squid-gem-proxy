@@ -22,8 +22,10 @@ RUN chown -R squid:squid /var/log/squid
 # Make cache dirs 
 RUN squid -z -F
 
-EXPOSE 3128
+EXPOSE 80
 
 # -X verbose debug logging
 # -N Don't run in daemon mode - important for docker
 ENTRYPOINT ["squid", "-N", "-X"]
+
+CMD ["-d0"]
